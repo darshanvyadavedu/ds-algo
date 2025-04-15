@@ -17,6 +17,7 @@ public class WordPattern {
         pattern = "aaaa";
         s = "dog cat cat dog";
         System.out.println(wordPattern.wordPattern(pattern, s)); // false
+
         pattern = "abba";
         s = "dog dog dog dog";
         System.out.println(wordPattern.wordPattern(pattern, s)); // false
