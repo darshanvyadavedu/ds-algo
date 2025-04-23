@@ -33,4 +33,20 @@ public class ValidAnagram {
         }
         return charMap.size() == 0;
     }
+
+    public boolean isAnagram2(String s, String t) {
+        int[] harr1 = new int[26];
+        int[] harr2 = new int[26];
+
+        for(char ch : s.toCharArray()) harr1[ch - 'a']++;
+        for(char ch : t.toCharArray()) harr2[ch - 'a']++;
+
+        for(int i = 0 ; i < 26 ; i++)
+            if(harr1[i] != harr2[i]) return false;
+
+
+        return true;
+    }
+
+
 }
